@@ -17,7 +17,7 @@ export class CustomerClass extends React.Component<any, any>{
         // you can use above line if you want to make it shorter code if it's long list of items
         return (
             <React.Fragment>
-                <h2>customer Class Component</h2>
+                <h2>Customer Class Component</h2>
                 <ul>
                     <li>Name: {this.props.name}</li>
                     {/* <li>Name: {name}</li> */}

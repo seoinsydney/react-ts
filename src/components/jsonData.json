@@ -1,0 +1,23 @@
+{
+   "PostCardList": [
+    { "PostCard": 
+        {
+            "img": "customerComponent.jpg",
+            "alt": "image",
+            "title": "Customer Component",
+            "description": "The basic function component of typeScript with React",
+            "link": ""
+        }
+    },
+    { "PostCard": 
+        {
+            "img": "customerComponent.jpg",
+            "alt": "image",
+            "title": "Customer Class Component",
+            "description": "The basic class component of typeScript with React",
+            "link": ""
+        }
+    }
+]
+    
+}

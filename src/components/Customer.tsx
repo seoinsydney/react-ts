@@ -8,7 +8,7 @@ interface IProps{
 }
 
 let Customer:React.FC<IProps> = ({name, age, title}) => {
-    console.log(name, age, title);
+    // console.log(name, age, title);
     
     return(
         <React.Fragment>
