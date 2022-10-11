@@ -1,47 +1,80 @@
 import PostCard from '../components/card/PostCard';
 import Customer from '../components/Customer';
 import { CustomerClass } from '../components/CustomerClass';
+import { Employee } from '../components/employee';
+import { EmployeeClass } from '../components/employeeClass';
 import JsonData from '../components/jsonData.json';
-
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import {Menu, Link} from "@material-ui/core";
+import Grid from '@material-ui/core/Grid';
+import imageToAdd from "./../images/ReactTS.png";
+import reactImage from './../images/react.png';
+import nodeImage from './../images/node.png';
+import './index.scss';
 
 function Home() {
     let CardData = JsonData.PostCardList
-    console.log(JsonData.PostCardList)
-
+    // console.log(JsonData.PostCardList)
     return (
-      <div className="App">
-        <header className="App-header">
-        <p>HOME</p>
-
-        {
+      <div className="homeClass">
+        <h1>HOME</h1>
+        <h2>React & TS</h2>
+        <Grid container spacing={2}
+        >
+          {
             CardData.map(cardList=>
+              <Grid item xs={12} sm={6} md={4} 
+              key={cardList.PostCard.id}
+              >
                 <PostCard 
-                img={cardList.PostCard.img} 
+                id={cardList.PostCard.id}
+                img={imageToAdd} 
                 alt={cardList.PostCard.alt}
                 title={cardList.PostCard.title} 
                 description={cardList.PostCard.description} 
                 link={cardList.PostCard.link}  
                 />
+                </Grid>
                 )
         }
-     
-        <Customer name={'Tom'} age={22} title={'IT'}/>
-        <CustomerClass name={'Tim'} age={23} title={'IT'}/>
+        </Grid>
 
-        {/* <a
-          className="App-link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
+        <h2>Node.js</h2>
+        <Grid container spacing={2}
         >
-          HOME
-        </a> */}
+          {
+            CardData.map(cardList=>
+              <Grid item xs={12} sm={6} md={4} 
+              key={cardList.PostCard.id}
+              >
+                <PostCard 
+                id={cardList.PostCard.id}
+                img={nodeImage} 
+                alt={cardList.PostCard.alt}
+                title={cardList.PostCard.title} 
+                description={cardList.PostCard.description} 
+                link={cardList.PostCard.link}  
+                />
+                </Grid>
+                )
+          }
+        </Grid>
 
-        {/* <Link to="/home"></Link> */}
-        </header>
+        {/* <Grid container>
+          <Grid item xs={12} md={6} >
+            <Customer name={'Tom'} age={22} title={'IT'}/>
+          </Grid>
+          <Grid item >
+            <CustomerClass name={'Tim'} age={23} title={'IT'}/>
+          </Grid>
+        </Grid>
+
+        <Grid container>
+          <Grid item xs={12} md={6} >
+            <Employee />
+          </Grid>
+          <Grid item >
+            <EmployeeClass />
+          </Grid>
+        </Grid> */}
       </div>
     );
   }

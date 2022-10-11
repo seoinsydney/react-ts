@@ -1,6 +1,4 @@
-// import React, { Component } from 'react';
 import './index.scss';
-import JsonData from '../jsonData.json';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -10,6 +8,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 interface CardProps {
+  id: number;
   img: string;
   alt: string;
   title: string;
@@ -17,28 +16,31 @@ interface CardProps {
   link: string;
 }
 
-let PostCard:React.FC<CardProps> = ({ img, alt,  title, description, link }) => {
-// console.log(img, title, description, link)
+let PostCard:React.FC<CardProps> = ({ id, img, alt,  title, description, link }) => {
 
   return (
-    <div className="App">
-      <Card sx={{ maxWidth: 345 }} key={title}>
+    <div>
+      <Card key={title}>
         <CardMedia
           component="img"
           height="140"
           image={img}
+          // image={imageToAdd}
           alt={alt}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary"
+          style={{overflow: "hidden", textOverflow: "ellipsis", width: '20rem'}}
+          >
             {description}
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">See More {link}</Button>
+          <Button size="small">See More</Button>
+          {/* <Link to="/">See More</Link> */}
         </CardActions>
       </Card>
     </div>
