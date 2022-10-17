@@ -1,6 +1,5 @@
 import React from 'react'
 
-interface IState{}
 interface IProps{
     name:string;
     age: number;

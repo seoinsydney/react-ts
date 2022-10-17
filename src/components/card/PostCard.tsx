@@ -1,5 +1,6 @@
 import './index.scss';
 import * as React from 'react';
+import { Link } from "react-router-dom";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -20,7 +21,7 @@ let PostCard:React.FC<CardProps> = ({ id, img, alt,  title, description, link })
 
   return (
     <div>
-      <Card key={title}>
+      <Card key={id}>
         <CardMedia
           component="img"
           height="140"
@@ -39,8 +40,7 @@ let PostCard:React.FC<CardProps> = ({ id, img, alt,  title, description, link })
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">See More</Button>
-          {/* <Link to="/">See More</Link> */}
+          <Button size="small"><Link to={link}>See More</Link></Button>
         </CardActions>
       </Card>
     </div>

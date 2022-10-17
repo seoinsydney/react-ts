@@ -13,13 +13,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  // background-color: #282c34;
-  // min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-  // font-size: calc(10px + 2vmin);
+  padding: 20px
 }
 
 .App-link, a {
@@ -28,10 +22,10 @@ body {
   text-decoration: none;
   list-style-type: none;
   &:hover {
-    color: #6b61fb;
-    // text-decoration: underline;
+    color: #7167ff;
   }
 }
+
 ul {
   list-style-type: none;
   display: flex;
@@ -41,11 +35,11 @@ ul {
   }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

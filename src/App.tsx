@@ -1,27 +1,38 @@
 import React from "react"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.scss';
 import Home from './pages/home';
-import Customer from './posts/postCustomer';
+import Posts from './pages/posts';
+import About from './pages/about';
+import BasicComponents from './pages/basicComponents';
+import PostCustomer from './posts/postCustomer';
 import Menu from './components/topMenu/topMenu';
 
-function App() {
+
+export interface IAppProps {}
+
+const App: React.FunctionComponent<IAppProps> = props => {
   return (
-    <div>
-      <header className="App-header">
-      <Menu />
-
-      <Router>
+      <BrowserRouter>
+        <div className="App-header">
+        <Menu />
         <Routes>
-          <Route path="/home" element={<Home />}/>
-          <Route path="/postCustomer" element={<Customer />}/>
+          <Route path="/" element={<Home />}/>
+          {/* <Route path="/posts" element={<Posts />}/> */}
+          <Route path="posts">
+            <Route index element={<Posts />} />
+            <Route path=":number" element={<Posts />} />
+          </Route>
+          <Route path="/about" element={<About />}/>
+          <Route path="/postCustomer" element={<PostCustomer />}/>
+
+          {/* <Route path="posts">
+            <Route index element={<BasicComponents />} />
+            <Route path=":number" element={<BasicComponents />} />
+          </Route> */}
         </Routes>
-      </Router>
-
-      <Home />
-
-      </header>
-    </div>
+        </div>
+      </BrowserRouter>
   );
 }
 

@@ -1,26 +1,27 @@
+
 import PostCard from '../components/card/PostCard';
-import Customer from '../components/Customer';
-import { CustomerClass } from '../components/CustomerClass';
-import { Employee } from '../components/employee';
-import { EmployeeClass } from '../components/employeeClass';
-import JsonData from '../components/jsonData.json';
+import TypeScriptJsonData from '../components/typeScript.json';
+import NodeJsonData from '../components/node.json';
 import Grid from '@material-ui/core/Grid';
 import imageToAdd from "./../images/ReactTS.png";
-import reactImage from './../images/react.png';
 import nodeImage from './../images/node.png';
 import './index.scss';
 
-function Home() {
-    let CardData = JsonData.PostCardList
-    // console.log(JsonData.PostCardList)
-    return (
-      <div className="homeClass">
+interface IHomeProps {
+    
+}
+ 
+const Home: React.FunctionComponent<IHomeProps> = props => {
+  let TypeScriptCardData = TypeScriptJsonData.PostCardList
+  let NodeCardData = NodeJsonData.PostCardList
+    return ( 
+      <div>
         <h1>HOME</h1>
         <h2>React & TS</h2>
         <Grid container spacing={2}
         >
           {
-            CardData.map(cardList=>
+            TypeScriptCardData.map(cardList=>
               <Grid item xs={12} sm={6} md={4} 
               key={cardList.PostCard.id}
               >
@@ -41,7 +42,7 @@ function Home() {
         <Grid container spacing={2}
         >
           {
-            CardData.map(cardList=>
+            NodeCardData.map(cardList=>
               <Grid item xs={12} sm={6} md={4} 
               key={cardList.PostCard.id}
               >
@@ -75,8 +76,8 @@ function Home() {
             <EmployeeClass />
           </Grid>
         </Grid> */}
-      </div>
-    );
-  }
-  
-  export default Home;
+    </div>
+     );
+}
+ 
+export default Home;

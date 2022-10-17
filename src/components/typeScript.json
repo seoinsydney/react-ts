@@ -7,7 +7,7 @@
             "alt": "Function Component image",
             "title": "Customer Component",
             "description": "The basic function component of typeScript with React",
-            "link": "customerComponent"
+            "link": "/postCustomer"
         }
     },
     { "PostCard": 
