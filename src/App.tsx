@@ -1,12 +1,11 @@
-import React from "react"
+import * as React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.scss';
 import Home from './pages/home';
-import Posts from './pages/posts';
 import About from './pages/about';
-import BasicComponents from './pages/basicComponents';
 import PostCustomer from './posts/postCustomer';
 import Menu from './components/topMenu/topMenu';
+import PostLayout from './components/postLayout/postLayout';
 
 
 export interface IAppProps {}
@@ -18,18 +17,10 @@ const App: React.FunctionComponent<IAppProps> = props => {
         <Menu />
         <Routes>
           <Route path="/" element={<Home />}/>
-          {/* <Route path="/posts" element={<Posts />}/> */}
-          <Route path="posts">
-            <Route index element={<Posts />} />
-            <Route path=":number" element={<Posts />} />
+          <Route path="layout" element={<PostLayout />} >
+            <Route path="/layout/postCustomer" element={<PostCustomer />}/>
           </Route>
           <Route path="/about" element={<About />}/>
-          <Route path="/postCustomer" element={<PostCustomer />}/>
-
-          {/* <Route path="posts">
-            <Route index element={<BasicComponents />} />
-            <Route path=":number" element={<BasicComponents />} />
-          </Route> */}
         </Routes>
         </div>
       </BrowserRouter>

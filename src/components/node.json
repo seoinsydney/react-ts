@@ -3,9 +3,10 @@
     { "PostCard": 
         {
             "id": 1,
+            "date": "Oct 2022",
             "img": "../../images/functionComponent.png",
             "alt": "Function Component image",
-            "title": "node",
+            "title": "Node.js",
             "description": "The basic function component of typeScript with React",
             "link": "customerComponent"
         }
@@ -13,9 +14,10 @@
     { "PostCard": 
         {
             "id": 2,
+            "date": "Oct 2022",
             "img": "customerComponent.jpg",
             "alt": "image",
-            "title": "Customer Class Component",
+            "title": "Node.js",
             "description": "The basic class component of typeScript with React",
             "link": ""
         }

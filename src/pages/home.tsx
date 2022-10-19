@@ -16,7 +16,7 @@ const Home: React.FunctionComponent<IHomeProps> = props => {
   let NodeCardData = NodeJsonData.PostCardList
     return ( 
       <div>
-        <h1>HOME</h1>
+        <h1>Study Room</h1>
         <h2>React & TS</h2>
         <Grid container spacing={2}
         >
@@ -27,6 +27,7 @@ const Home: React.FunctionComponent<IHomeProps> = props => {
               >
                 <PostCard 
                 id={cardList.PostCard.id}
+                date={cardList.PostCard.date}
                 img={imageToAdd} 
                 alt={cardList.PostCard.alt}
                 title={cardList.PostCard.title} 
@@ -48,6 +49,7 @@ const Home: React.FunctionComponent<IHomeProps> = props => {
               >
                 <PostCard 
                 id={cardList.PostCard.id}
+                date={cardList.PostCard.date}
                 img={nodeImage} 
                 alt={cardList.PostCard.alt}
                 title={cardList.PostCard.title} 

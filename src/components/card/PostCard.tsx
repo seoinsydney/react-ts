@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 
 interface CardProps {
   id: number;
+  date: string;
   img: string;
   alt: string;
   title: string;
@@ -17,7 +18,7 @@ interface CardProps {
   link: string;
 }
 
-let PostCard:React.FC<CardProps> = ({ id, img, alt,  title, description, link }) => {
+let PostCard:React.FC<CardProps> = ({ id, date, img, alt,  title, description, link }) => {
 
   return (
     <div>
@@ -33,6 +34,7 @@ let PostCard:React.FC<CardProps> = ({ id, img, alt,  title, description, link })
           <Typography gutterBottom variant="h5" component="div">
             {title}
           </Typography>
+          {/* <p className="date">{date}</p> */}
           <Typography variant="body2" color="text.secondary"
           style={{overflow: "hidden", textOverflow: "ellipsis", width: '20rem'}}
           >
@@ -40,7 +42,8 @@ let PostCard:React.FC<CardProps> = ({ id, img, alt,  title, description, link })
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small"><Link to={link}>See More</Link></Button>
+          <Button size="small"><Link to={link}>Read</Link></Button>
+
         </CardActions>
       </Card>
     </div>

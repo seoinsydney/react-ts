@@ -2,42 +2,57 @@
    "PostCardList": [
     { "PostCard": 
         {
+            "id": 0,
+            "date": "Oct 2022",
+            "img": "employeeClassComponent.jpg",
+            "alt": "typescript image",
+            "title": "Installation",
+            "description": "Create new project",
+            "link": "/layout/postCustomer"
+        }
+    },
+    { "PostCard": 
+        {
             "id": 1,
+            "date": "Oct 2022",
             "img": "../../images/functionComponent.png",
-            "alt": "Function Component image",
-            "title": "Customer Component",
-            "description": "The basic function component of typeScript with React",
-            "link": "/postCustomer"
+            "alt": "typescript image",
+            "title": "Basic Components",
+            "description": "The basic functional and class component of typeScript with React",
+            "link": "/layout/postCustomer"
         }
     },
     { "PostCard": 
         {
             "id": 2,
+            "date": "Oct 2022",
             "img": "customerComponent.jpg",
-            "alt": "image",
-            "title": "Customer Class Component",
-            "description": "The basic class component of typeScript with React",
-            "link": ""
+            "alt": "typescript image",
+            "title": "Hooks",
+            "description": "Learn how to use hooks in react typescript",
+            "link": "/layout/postCustomer"
         }
     },
     { "PostCard": 
         {
             "id": 3,
+            "date": "Oct 2022",
             "img": "employeeComponent.jpg",
-            "alt": "image",
-            "title": "Employee Component",
-            "description": "Functional component using useState hook",
-            "link": ""
+            "alt": "typescript image",
+            "title": "Menu",
+            "description": "Router",
+            "link": "/layout/postCustomer"
         }
     },
     { "PostCard": 
         {
             "id": 4,
-            "img": "employeeClassComponent.jpg",
-            "alt": "image",
-            "title": "Employee Class Component",
-            "description": "class component using useState hook",
-            "link": ""
+            "date": "Oct 2022",
+            "img": "employeeComponent.jpg",
+            "alt": "typescript image",
+            "title": "React code blocks",
+            "description": " - ",
+            "link": "/layout/postCustomer"
         }
     }
     ]

@@ -3,6 +3,16 @@ body {
   color: white;
 }
 
+h1 {
+  margin: 0;
+}
+
+.space-between {
+  display: flex;
+  justify-content: center;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -21,6 +31,7 @@ body {
   transition: .3s;
   text-decoration: none;
   list-style-type: none;
+  cursor: pointer;
   &:hover {
     color: #7167ff;
   }

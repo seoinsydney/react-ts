@@ -11,14 +11,16 @@ const TopMenu: React.FunctionComponent<ITopMenuProps> = props => {
         <div className="topMenu">
             <ul>
                 <li><Link to="/" >Home</Link></li>
-                <li><Link to="/posts" >Posts</Link></li>
-                <li><Link to="/about" >About</Link></li>
-                <li><a
-                className="App-link"
-                href="http://seosydneyweb.com/"
-                rel="noopener noreferrer" 
-                >
-                    Web</a></li>
+                {/* <li><Link to="/about" >About</Link></li> */}
+                <li>
+                    <a
+                        className="App-link"
+                        href="http://seosydneyweb.com/"
+                        rel="noopener noreferrer" 
+                        >
+                        Web
+                    </a>
+                </li>
             </ul>
         </div>
      );
