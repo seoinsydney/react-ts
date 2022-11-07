@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 
-interface IBasicComponentsProps {
+interface ITheBasicComponentsProps {
     
 }
  
-const BasicComponents: React.FunctionComponent<IBasicComponentsProps> = props => {
+const TheBasicComponents: React.FunctionComponent<ITheBasicComponentsProps> = props => {
 
     const [message, setMessage] = useState('');
     const { number } = useParams();
@@ -27,4 +27,4 @@ const BasicComponents: React.FunctionComponent<IBasicComponentsProps> = props =>
      );
 }
  
-export default BasicComponents;
+export default TheBasicComponents;

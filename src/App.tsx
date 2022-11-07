@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.scss';
-import Home from './pages/home';
-import About from './pages/about';
-import PostCustomer from './posts/postCustomer';
 import Menu from './components/topMenu/topMenu';
 import PostLayout from './components/postLayout/postLayout';
+import Home from './pages/home';
+import TypeScriptInstallation from './posts/TypeScriptInstallation';
+import BasicComponents from './posts/BasicComponents';
+import EventsHandling from './posts/EventsHandling';
+import ErrorPage from './posts/ErrorPage';
 
 
 export interface IAppProps {}
@@ -18,9 +20,11 @@ const App: React.FunctionComponent<IAppProps> = props => {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="layout" element={<PostLayout />} >
-            <Route path="/layout/postCustomer" element={<PostCustomer />}/>
+            <Route path="/layout/TypeScriptInstallation" element={<TypeScriptInstallation />}/>
+            <Route path="/layout/BasicComponents" element={<BasicComponents />}/>
+            <Route path="/layout/EventsHandling" element={<EventsHandling />}/>
+            <Route path="/layout/ErrorPage" element={<ErrorPage />}/>
           </Route>
-          <Route path="/about" element={<About />}/>
         </Routes>
         </div>
       </BrowserRouter>

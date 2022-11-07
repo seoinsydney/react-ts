@@ -7,8 +7,8 @@
             "img": "employeeClassComponent.jpg",
             "alt": "typescript image",
             "title": "Installation",
-            "description": "Create new project",
-            "link": "/layout/postCustomer"
+            "description": "Create new application with react type script",
+            "link": "/layout/TypeScriptInstallation"
         }
     },
     { "PostCard": 
@@ -19,7 +19,7 @@
             "alt": "typescript image",
             "title": "Basic Components",
             "description": "The basic functional and class component of typeScript with React",
-            "link": "/layout/postCustomer"
+            "link": "/layout/BasicComponents"
         }
     },
     { "PostCard": 
@@ -30,7 +30,7 @@
             "alt": "typescript image",
             "title": "Hooks",
             "description": "Learn how to use hooks in react typescript",
-            "link": "/layout/postCustomer"
+            "link": "/layout/ErrorPage"
         }
     },
     { "PostCard": 
@@ -41,7 +41,7 @@
             "alt": "typescript image",
             "title": "Menu",
             "description": "Router",
-            "link": "/layout/postCustomer"
+            "link": "/layout/ErrorPage"
         }
     },
     { "PostCard": 
@@ -52,7 +52,29 @@
             "alt": "typescript image",
             "title": "React code blocks",
             "description": " - ",
-            "link": "/layout/postCustomer"
+            "link": "/layout/ErrorPage"
+        }
+    },
+    { "PostCard": 
+        {
+            "id": 5,
+            "date": "Oct 2022",
+            "img": "employeeComponent.jpg",
+            "alt": "typescript image",
+            "title": "Events Handling",
+            "description": " - ",
+            "link": "/layout/EventsHandling"
+        }
+    },
+    { "PostCard": 
+        {
+            "id": 6,
+            "date": "Oct 2022",
+            "img": "employeeComponent.jpg",
+            "alt": "typescript image",
+            "title": "React code blocks",
+            "description": " - ",
+            "link": "/layout/ErrorPage"
         }
     }
     ]

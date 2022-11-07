@@ -42,8 +42,7 @@ let PostCard:React.FC<CardProps> = ({ id, date, img, alt,  title, description, l
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small"><Link to={link}>Read</Link></Button>
-
+          <Button size="small"><Link to={link}>Read More</Link></Button>
         </CardActions>
       </Card>
     </div>
